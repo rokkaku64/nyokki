@@ -11,6 +11,8 @@ a {
 
 .sp {
   display: none; }
+  .sp-nuv {
+    display: none; }
 
 .head {
   min-width: 1000px;
@@ -40,21 +42,24 @@ a {
     letter-spacing: 2px;
     margin: 0px; }
 
-.nav {
+.nuv {
   height: 40px;
   background: #003567;
   margin: 0px;
   min-width: 1000px; }
-  .nav ul {
+  .nuv ul {
     list-style: none;
     text-align: center;
     margin: 0; }
-  .nav li {
+  .nuv li {
+    font-size: 16px;
     display: inline-block;
     line-height: 40px;
     text-align: center;
     margin: 0 10% 0 0;
     widows: 200px; }
+    .nuv li.sp {
+      display: none; }
 
 .main {
   margin: 0 0 40px 0;
@@ -161,7 +166,7 @@ a {
     .link-title p {
       margin: 0; }
       .link-title p:before {
-        content: url(img/pick.png);
+        content: url(../imgpick.png);
         display: inline-block;
         line-height: 50px;
         margin: 0 8px 0 0; }
@@ -278,7 +283,7 @@ a {
   .btn p {
     margin: 0; }
     .btn p:after {
-      content: url(img/pick.png);
+      content: url(../imgpick.png);
       display: inline-block;
       line-height: 50px;
       margin: 0 0 0 10px; }
@@ -289,6 +294,8 @@ a {
 
   .sp {
     display: block; }
+    .sp-nuv {
+      display: block; }
 
   .head {
     min-width: auto;
@@ -318,23 +325,45 @@ a {
       font-weight: bold;
       letter-spacing: 2px;
       margin: 0px; }
+    .head img {
+      position: absolute;
+      width: 60px;
+      right: 0;
+      top: 40px; }
 
-  .nav {
+  .nuv {
     display: none;
-    height: 40px;
+    height: auto;
+    width: 230px;
     background: #003567;
     margin: 0px;
-    min-width: 1000px; }
-    .nav ul {
+    min-width: auto;
+    position: absolute;
+    right: 0;
+    z-index: 1; }
+    .nuv ul {
       list-style: none;
       text-align: center;
-      margin: 0; }
-    .nav li {
-      display: inline-block;
+      margin: 10px 0;
+      background: #003567; }
+    .nuv li {
+      display: block;
+      font-size: 16px;
       line-height: 40px;
-      text-align: center;
-      margin: 0 10% 0 0;
-      widows: 200px; }
+      text-align: left;
+      margin: 0 0 10px;
+      width: 200px; }
+      .nuv li.sp {
+        display: block;
+        font-size: 12px;
+        padding: 0 0 0 10px; }
+      .nuv li:before {
+        content: url("/nyokki/img/pick.png");
+        margin: 0 10px 0 0;
+        display: inline-block; }
+
+  .open.nuv {
+    display: block !important; }
 
   .main {
     margin: 0 0 60px 0;
@@ -551,7 +580,7 @@ a {
     .btn p {
       margin: 0; }
       .btn p:after {
-        content: url(img/pick.png);
+        content: url(../imgpick.png);
         display: inline-block;
         line-height: 50px;
         margin: 0 0 0 10px; } }

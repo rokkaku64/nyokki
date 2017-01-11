@@ -23,7 +23,14 @@ a {
 
 
 
-.sp{display: none}
+.sp{
+    display: none;
+    
+        
+    &-nuv{        
+        display: none;
+    }
+}
 
 .head{
     min-width: 1000px;
@@ -60,7 +67,7 @@ a {
     }
 }
 
-.nav{
+.nuv{
     height: 40px;
     background: $blue;
     margin: 0px;
@@ -72,11 +79,16 @@ a {
         margin: 0;
     }
     & li{
+        font-size: 16px;
         display: inline-block;
         line-height: 40px;
         text-align: center;
         margin: 0 10% 0 0;
         widows: 200px;
+        
+        &.sp{
+            display: none;
+        }
     }
 }
 
@@ -222,7 +234,7 @@ a {
             margin: 0;
             
             &:before{
-                content: url(img/pick.png);
+                content: url(../imgpick.png);
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 8px 0 0;
@@ -385,7 +397,7 @@ a {
             margin: 0;
             
             &:after{
-                content: url(img/pick.png);
+                content: url(../imgpick.png);
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 0 0 10px;
@@ -401,6 +413,10 @@ a {
     
 .sp{
     display: block;
+    
+    &-nuv{
+    display: block;
+    }
 }
     
 .head{
@@ -437,26 +453,58 @@ a {
         letter-spacing: 2px;
         margin: 0px;
     }
+    
+    & img{
+        position: absolute;
+        width: 60px;
+        right: 0;
+        top: 40px;
+    }
 }
 
-.nav{
+.nuv{
     display: none;
-    height: 40px;
+    height: auto;
+    width: 230px;
     background: $blue;
     margin: 0px;
-    min-width: 1000px;
+    min-width: auto;
+    position: absolute;
+    right: 0;
+    z-index: 1;
     
     & ul{
         list-style:none;
         text-align: center;
-        margin: 0;
+        margin: 10px 0;
+        background: $blue;
     }
     & li{
-        display: inline-block;
+        display: block;
+        font-size: 16px;
         line-height: 40px;
-        text-align: center;
-        margin: 0 10% 0 0;
-        widows: 200px;
+        text-align: left;
+        margin: 0 0 10px;
+        width: 200px;
+        
+        &.sp{
+            display: block;
+            font-size: 12px;
+            padding: 0 0 0 10px;
+        }
+        
+        &:before{
+                content: url("/nyokki/img/pick.png");
+                margin: 0 10px 0 0;
+                display: inline-block;
+        }
+    }
+    
+}
+       
+.open{
+    &.nuv{
+        display: block !important;
     }
 }
 
@@ -758,7 +806,7 @@ a {
             margin: 0;
             
             &:after{
-                content: url(img/pick.png);
+                content: url(../imgpick.png);
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 0 0 10px;
