@@ -161,7 +161,7 @@ a {
     .link-title p {
       margin: 0; }
       .link-title p:before {
-        content: url(/img/pick.png);
+        content: url(img/pick.png);
         display: inline-block;
         line-height: 50px;
         margin: 0 8px 0 0; }
@@ -278,7 +278,7 @@ a {
   .btn p {
     margin: 0; }
     .btn p:after {
-      content: url(/img/pick.png);
+      content: url(img/pick.png);
       display: inline-block;
       line-height: 50px;
       margin: 0 0 0 10px; }
@@ -439,7 +439,7 @@ a {
       .link-title p {
         margin: 0; }
         .link-title p:before {
-          content: url(/img/pick.png);
+          content: url(../img/pick.png);
           display: inline-block;
           line-height: 50px;
           margin: 0 8px 0 0; }
@@ -551,9 +551,9 @@ a {
     .btn p {
       margin: 0; }
       .btn p:after {
-        content: url(/img/pick.png);
+        content: url(img/pick.png);
         display: inline-block;
         line-height: 50px;
         margin: 0 0 0 10px; } }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */
