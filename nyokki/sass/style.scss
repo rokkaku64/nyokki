@@ -336,7 +336,7 @@ a {
             right: 0;
         }
         
-        & span a:link{
+        & span a{
             color: $darkred;
             text-decoration: underline;
         }
@@ -397,7 +397,7 @@ a {
             margin: 0;
             
             &:after{
-                content: url(../imgpick.png);
+                content: url(../img/pick.png);
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 0 0 10px;
@@ -613,7 +613,7 @@ a {
 
 .right{
     float: none;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -700,11 +700,12 @@ a {
     
     &-title{
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
         padding: 0;
         margin: 20px 0;
     }
     &-text{
+        line-height: 35px;
         padding: 0 20px;
         color: #666666;
         
@@ -721,10 +722,11 @@ a {
     &-text{
         margin: 30px 0;
         position: relative;
+        padding: 20px;
         
         & .table{
             text-align: center;
-            width: 400px;
+            width: 280px;
             margin: 0 auto 20px;
         }
         
@@ -745,7 +747,7 @@ a {
             right: 0;
         }
         
-        & span a:link{
+        & span a{
             color: $darkred;
             text-decoration: underline;
         }
@@ -785,10 +787,10 @@ a {
         }
         
         & .red{
-            font-size: 20px;
+            font-size: 22px;
             text-align: center;
             color: $darkred;
-            margin: 30px;
+            margin: 30px auto;
         }
     }
 }
@@ -806,7 +808,7 @@ a {
             margin: 0;
             
             &:after{
-                content: url(../imgpick.png);
+                content: url(../img/pick.png);
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 0 0 10px;

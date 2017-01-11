@@ -239,7 +239,7 @@ a {
       font-size: 14px;
       position: absolute;
       right: 0; }
-    .grid-text span a:link {
+    .grid-text span a {
       color: #A40000;
       text-decoration: underline; }
     .grid-text table {
@@ -283,7 +283,7 @@ a {
   .btn p {
     margin: 0; }
     .btn p:after {
-      content: url(../imgpick.png);
+      content: url(../img/pick.png);
       display: inline-block;
       line-height: 50px;
       margin: 0 0 0 10px; }
@@ -441,7 +441,7 @@ a {
 
   .right {
     float: none;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden; }
 
@@ -506,10 +506,11 @@ a {
     font-family: serif; }
     .team-title {
       text-align: center;
-      font-size: 20px;
+      font-size: 24px;
       padding: 0;
       margin: 20px 0; }
     .team-text {
+      line-height: 35px;
       padding: 0 20px;
       color: #666666; }
 
@@ -520,10 +521,11 @@ a {
       border-bottom: 2px #333 solid; }
     .grid-text {
       margin: 30px 0;
-      position: relative; }
+      position: relative;
+      padding: 20px; }
       .grid-text .table {
         text-align: center;
-        width: 400px;
+        width: 280px;
         margin: 0 auto 20px; }
       .grid-text .day {
         border: 1px #3E3A39 solid;
@@ -536,7 +538,7 @@ a {
         font-size: 14px;
         position: absolute;
         right: 0; }
-      .grid-text span a:link {
+      .grid-text span a {
         color: #A40000;
         text-decoration: underline; }
       .grid-text table {
@@ -564,10 +566,10 @@ a {
           border-radius: 12px;
           margin: 0 0 1px; }
       .grid-text .red {
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
         color: #A40000;
-        margin: 30px; }
+        margin: 30px auto; }
 
   .btn {
     background-color: #003567;
@@ -580,7 +582,7 @@ a {
     .btn p {
       margin: 0; }
       .btn p:after {
-        content: url(../imgpick.png);
+        content: url(../img/pick.png);
         display: inline-block;
         line-height: 50px;
         margin: 0 0 0 10px; } }
