@@ -190,6 +190,99 @@ a {
     top: 15px;
     right: 50px; }
 
+.subtitle {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  font-size: 30px;
+  font-family: serif;
+  color: #ffffff;
+  text-shadow: 0 0 15px #fff, 0 0 15px #fff; }
+
+.team {
+  margin: 30px 0 100px;
+  font-family: serif; }
+  .team-title {
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    margin: 20px 0; }
+  .team-text {
+    padding: 0 20px;
+    color: #666666; }
+
+.grid {
+  margin: 0 0 100px; }
+  .grid-title {
+    font-size: 22px;
+    border-bottom: 2px #333 solid; }
+  .grid-text {
+    margin: 30px 0;
+    position: relative; }
+    .grid-text .table {
+      text-align: center;
+      width: 400px;
+      margin: 0 auto 20px; }
+    .grid-text .day {
+      border: 1px #3E3A39 solid;
+      padding: 5px; }
+    .grid-text .time {
+      border: 1px #3E3A39 solid;
+      border-top: none;
+      padding: 5px; }
+    .grid-text .s {
+      font-size: 14px;
+      position: absolute;
+      right: 0; }
+    .grid-text span a:link {
+      color: #A40000;
+      text-decoration: underline; }
+    .grid-text table {
+      margin: 0 auto;
+      border-collapse: collapse; }
+    .grid-text td {
+      border: 1px #3E3A39 solid;
+      margin: 0;
+      padding: 5px;
+      text-align: center; }
+      .grid-text td.position {
+        width: 200px; }
+      .grid-text td.name {
+        width: 300px; }
+    .grid-text p.time {
+      margin: 20px 0 0;
+      font-size: 18px;
+      border: none; }
+      .grid-text p.time:before {
+        content: "";
+        display: inline-block;
+        background-color: #A40000;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        margin: 0 0 1px; }
+    .grid-text .red {
+      font-size: 20px;
+      text-align: center;
+      color: #A40000;
+      margin: 30px; }
+
+.btn {
+  background-color: #003567;
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px auto; }
+  .btn p {
+    margin: 0; }
+    .btn p:after {
+      content: url(/img/pick.png);
+      display: inline-block;
+      line-height: 50px;
+      margin: 0 0 0 10px; }
+
 @media screen and (max-width: 640px) {
   .pc {
     display: none; }
@@ -247,10 +340,10 @@ a {
     margin: 0 0 60px 0;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 280px;
     overflow: hidden;
-    min-height: 400px;
-    min-width: 400px; }
+    min-width: 100%;
+    min-height: 100%; }
     .main img {
       overflow: hidden;
       width: 100%;
@@ -267,7 +360,7 @@ a {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    width: 80%; }
+    width: 90%; }
 
   .left {
     clear: both;
@@ -318,8 +411,8 @@ a {
       margin: 20px 0; }
 
   .right {
-    clear: both;
-    width: 310px;
+    float: none;
+    width: 300px;
     margin: 0 auto;
     overflow: hidden; }
 
@@ -329,8 +422,7 @@ a {
     margin: 0 0 55px;
     border: none; }
     .link img {
-      clear: both;
-      border: #003567 3px solid; }
+      clear: both; }
     .link-table {
       clear: both;
       width: 300px;
@@ -370,6 +462,98 @@ a {
     .footer-text {
       position: absolute;
       top: 15px;
-      right: 50px; } }
+      right: 50px; }
 
-/*# sourceMappingURL=style.css.map */
+  .subtitle {
+    position: absolute;
+    bottom: 15%;
+    font-size: 25px;
+    font-family: serif;
+    color: #ffffff;
+    text-shadow: 0 0 15px #fff, 0 0 15px #fff; }
+
+  .team {
+    margin: 30px 0 100px;
+    font-family: serif; }
+    .team-title {
+      text-align: center;
+      font-size: 20px;
+      padding: 0;
+      margin: 20px 0; }
+    .team-text {
+      padding: 0 20px;
+      color: #666666; }
+
+  .grid {
+    margin: 0 0 100px; }
+    .grid-title {
+      font-size: 22px;
+      border-bottom: 2px #333 solid; }
+    .grid-text {
+      margin: 30px 0;
+      position: relative; }
+      .grid-text .table {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto 20px; }
+      .grid-text .day {
+        border: 1px #3E3A39 solid;
+        padding: 5px; }
+      .grid-text .time {
+        border: 1px #3E3A39 solid;
+        border-top: none;
+        padding: 5px; }
+      .grid-text .s {
+        font-size: 14px;
+        position: absolute;
+        right: 0; }
+      .grid-text span a:link {
+        color: #A40000;
+        text-decoration: underline; }
+      .grid-text table {
+        margin: 0 auto;
+        border-collapse: collapse; }
+      .grid-text td {
+        border: 1px #3E3A39 solid;
+        margin: 0;
+        padding: 5px;
+        text-align: center; }
+        .grid-text td.position {
+          width: 200px; }
+        .grid-text td.name {
+          width: 300px; }
+      .grid-text p.time {
+        margin: 20px 0 0;
+        font-size: 18px;
+        border: none; }
+        .grid-text p.time:before {
+          content: "";
+          display: inline-block;
+          background-color: #A40000;
+          width: 12px;
+          height: 12px;
+          border-radius: 12px;
+          margin: 0 0 1px; }
+      .grid-text .red {
+        font-size: 20px;
+        text-align: center;
+        color: #A40000;
+        margin: 30px; }
+
+  .btn {
+    background-color: #003567;
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px auto; }
+    .btn p {
+      margin: 0; }
+      .btn p:after {
+        content: url(/img/pick.png);
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 0 0 10px; } }
+
+/*# sourceMappingURL=style2.css.map */
